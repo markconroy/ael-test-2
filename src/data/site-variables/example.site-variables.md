@@ -1,7 +1,7 @@
 ---
 site_title: "addEventLister"
-site_subtitle: "Test Site 2"
+site_subtitle: "e.g. Free Developer Events"
 site_description: "SEO Friendly description here"
 site_author: "@markconroy"
-site_repo: 'https://github.com/markconroy/ael-test-2'
+site_repo: 'SITE REPO URL HERE'
 ---
