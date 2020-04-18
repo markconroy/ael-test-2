@@ -32,7 +32,7 @@ Any questions, email mark@annertech.com
 ## Notes to Self
 To deploy a new addEventLister site:
 - Create new repo using ael-base as template
-- Set the `ael-base` as an origin called `base`
-- - We can then simply merge `base` to any site to inherit updates
-- Rename `src/data/site-variables/example.site-variables.md` to `src/data/site-variables.site-variables.md`
+- Add this to the ael-sites directory
+- Add new `events` branch for events PRs to be created against
+- Rename `src/data/site-variables/example.site-variables.md` to `src/data/site-variables/site-variables.md`
 - Edit the new site variables - this is the only file that will be different per website
