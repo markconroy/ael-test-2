@@ -10,9 +10,9 @@ const IndexPage = ({ data }) => (
       title={`${data.allMarkdownRemark.edges.length} Events`}
     />
 
-    <StyledHeading h1>Free Developer Events</StyledHeading>
+    <StyledHeading h1>{data.siteVariables.childMarkdownRemark.frontmatter.site_subtitle}</StyledHeading>
 
-    <p>{data.allMarkdownRemark.edges.length} Upcoming Developer Events</p>
+    <p>{data.allMarkdownRemark.edges.length} Upcoming Events</p>
     <p>Browse:
       <ul>
         <li><Link to="/events">{data.allMarkdownRemark.edges.length} upcoming events</Link></li>
@@ -46,10 +46,16 @@ export const IndexPageQuery = graphql`
         totalCount
       }
     }
-    site {
-      siteMetadata {
-        title
-        subtitle
+    siteVariables: file(dir: {regex: "/(site-variables)/"}, name: {eq: "site-variables"}) {
+      dir
+      childMarkdownRemark {
+        frontmatter {
+          site_title
+          site_subtitle
+          site_description
+          site_author
+          site_repo
+        }
       }
     }
   }

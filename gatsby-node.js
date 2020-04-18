@@ -34,7 +34,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         edges {
           node {
             frontmatter {
-              path
               path_date: start_date(formatString: "YYYY-MM-DD")
               start_date
               country
