@@ -30,7 +30,7 @@ export default IndexPage
 
 export const IndexPageQuery = graphql`
   {
-    allMarkdownRemark {
+    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(data/events)/"}}) {
       edges {
         node {
           frontmatter {
