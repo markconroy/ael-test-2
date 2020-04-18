@@ -2,7 +2,7 @@
   "name": "add-event-lister",
   "private": true,
   "description": "A Gatsby-powered event listings portal.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Mark Conroy <mark@mark.ie>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
